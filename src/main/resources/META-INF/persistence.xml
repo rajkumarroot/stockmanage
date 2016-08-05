@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.app_billingapp_war_1.0PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.app.billingapp.model.User</class>
+    <class>com.app.billingapp.model.Roles</class>
+    <class>com.app.billingapp.model.Products</class>
+    <class>com.app.billingapp.model.Categories</class>
+    <class>com.app.billingapp.model.SalesMaster</class>
+    <class>com.app.billingapp.model.Vendors</class>
+    <class>com.app.billingapp.model.SalesItems</class>
+    <class>com.app.billingapp.model.Warehouse</class>
+    <class>com.app.billingapp.model.OrderMaster</class>
+    <class>com.app.billingapp.model.PurchasedItems</class>
+    <class>com.app.billingapp.model.PurchaseMaster</class>
+    <class>com.app.billingapp.model.StoreStocks</class>
+    <class>com.app.billingapp.model.OrderItems</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/billing_stocks"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="fsp"/>
+    </properties>
+  </persistence-unit>
+</persistence>
